@@ -84,11 +84,11 @@ public class KingfisherManager {
     /// Downloader used by this manager
     public var downloader: ImageDownloader
     
-    convenience init() {
+    public convenience init() {
         self.init(downloader: .default, cache: .default)
     }
     
-    init(downloader: ImageDownloader, cache: ImageCache) {
+    public init(downloader: ImageDownloader, cache: ImageCache) {
         self.downloader = downloader
         self.cache = cache
     }
